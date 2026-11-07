@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Users API</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="section">
+    <div class="label">ID (для деталки, PUT, PATCH, DELETE)</div>
+    <input id="userId" type="number" placeholder="например: 1">
+  </div>
+
+  <div class="section">
+    <div class="label">Username</div>
+    <input id="username" type="text" placeholder="alice">
+
+    <div class="label">Description</div>
+    <input id="description" type="text" placeholder="Frontend dev">
+  </div>
+
+  <div class="section">
+    <div class="label">Действия</div>
+    <div class="buttons">
+      <button id="btn-get-all">GET all</button>
+      <button id="btn-get-one">GET by id</button>
+      <button id="btn-post">POST</button>
+      <button id="btn-put">PUT</button>
+      <button id="btn-patch">PATCH</button>
+      <button id="btn-delete">DELETE</button>
+    </div>
+  </div>
+
+  <div id="output">
+    <div class="out-label">Response</div>
+    <div class="status" id="status"></div>
+    <pre id="result"></pre>
+  </div>
+
+  <section class="section">
+    <h2>Пользователи</h2>
+    <div id="descriptionFilters" class="buttons"></div>
+    <div id="usersTable"></div>
+  </section>
+
+  <section class="section">
+    <h2>История запросов</h2>
+    <button id="btn-clear-history">Очистить историю</button>
+    <div id="historyList"></div>
+  </section>
+
+  <p style="margin-top:40px"><a href="http://localhost:3000/api-docs" target="_blank" style="font-size: 16px;">Swagger UI</a></p>
+
+  <script src="bundle.js"></script>
+</body>
+</html>

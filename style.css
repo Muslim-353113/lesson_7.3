@@ -1,0 +1,125 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: monospace;
+  font-size: 13px;
+  background: #fff;
+  color: #111;
+  padding: 40px;
+  max-width: 680px;
+}
+
+h1 {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #111;
+  padding-bottom: 8px;
+}
+
+.section { margin-bottom: 28px; }
+
+.label {
+  margin-bottom: 6px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 7px 10px;
+  font-family: inherit;
+  font-size: 13px;
+  margin-bottom: 8px;
+  outline: none;
+  background: #fff;
+}
+
+input:focus { border-color: #111; }
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+button {
+  padding: 6px 14px;
+  border: 1px solid #111;
+  background: #fff;
+  cursor: pointer;
+}
+
+button:hover { 
+  background: #111; 
+  color: #fff; 
+}
+
+#output {
+  margin-top: 32px;
+  border-top: 1px solid #eee;
+  padding-top: 16px;
+  display: none;
+}
+
+pre {
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-all;
+  background: #f9f9f9;
+  padding: 14px;
+  border: 1px solid #eee;
+}
+
+.status { font-size: 11px; margin-bottom: 6px; color: #888; }
+.status.ok  { color: #2a2; }
+.status.err { color: #c00; }
+
+a { font-size: 11px; color: #888; text-decoration: none; border-bottom: 1px dotted #ccc; }
+a:hover { color: #111; }
+
+
+#usersTable {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+tbody tr {
+    cursor: pointer;
+}
+
+tbody tr:hover {
+    background: #eeeeee;
+}
+
+#descriptionFilters {
+    margin: 15px 0;
+}
+
+#historyList {
+    margin-top: 15px;
+}
+
+.history-item {
+    padding: 10px;
+    margin-bottom: 8px;
+    background: #eeeeee;
+    border-radius: 6px;
+    overflow-wrap: anywhere;
+}
